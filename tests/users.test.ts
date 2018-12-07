@@ -28,7 +28,7 @@ describe('Read', () => {
 });
 
 describe('Create', () => {
-  it('Create user', () => {
+  it.skip('Create user', () => {
     // :: Converter para async/await :: //
 
     return client().post('/users').send({ name: 'Foo' }).then((res) => {
@@ -56,7 +56,7 @@ describe('Delete', () => {
     });
   });
 
-  it('Delete all users');
+  it.skip('Delete all users');
 
   it('Returns not found if user does not exist', async () => {
     const res = await client().del('/users/99');
@@ -67,6 +67,6 @@ describe('Delete', () => {
 });
 
 describe('Update', () => {
-  it('Updates user');
-  it('Returns not found if user does not exist');
+  it.skip('Updates user');
+  it.skip('Returns not found if user does not exist');
 });
