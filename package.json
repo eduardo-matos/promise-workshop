@@ -1,0 +1,35 @@
+{
+  "name": "async-await-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "test": "mocha --opts .mochaopts",
+    "build": "rm -rf ./dist && tsc",
+    "lint": "tslint --project ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "express": "4.16.4",
+    "http-status": "^1.3.1",
+    "sequelize": "4.27"
+  },
+  "devDependencies": {
+    "@types/chai": "4.1.7",
+    "@types/chai-http": "3.0.5",
+    "@types/express": "4.16.0",
+    "@types/mocha": "5.2.5",
+    "@types/sequelize": "4.27.32",
+    "chai": "4.2.0",
+    "chai-http": "4.2.0",
+    "mocha": "5.2.0",
+    "sqlite3": "4.0.4",
+    "ts-node": "7.0.1",
+    "tslint": "5.11.0",
+    "typescript": "3.2.2"
+  }
+}
